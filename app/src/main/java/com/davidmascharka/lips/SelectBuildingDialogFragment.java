@@ -82,6 +82,12 @@ public class SelectBuildingDialogFragment extends DialogFragment {
 						listener.onBuildingChanged("Cowles");
 					} else if (which == 2) {
 						listener.onBuildingChanged("Cartwright");
+					} else if (which == 3){
+						listener.onBuildingChanged("ramadan");
+					}else if (which == 4){
+						listener.onBuildingChanged("lab");
+					}else if (which == 5){
+						listener.onBuildingChanged("morb3");
 					}
 				}
 			});
