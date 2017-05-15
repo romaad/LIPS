@@ -88,6 +88,8 @@ public class SelectBuildingDialogFragment extends DialogFragment {
 						listener.onBuildingChanged("lab");
 					}else if (which == 5){
 						listener.onBuildingChanged("morb3");
+					}else if (which == 6){
+						listener.onBuildingChanged("3alam");
 					}
 				}
 			});

@@ -709,6 +709,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 			case "morb3":
 
 				break;
+			case "3alam":
+				//3alam: put wifi.reading with mac addresses as lab case but with your addresses
+				break
 			default:
 				break;
 		}
