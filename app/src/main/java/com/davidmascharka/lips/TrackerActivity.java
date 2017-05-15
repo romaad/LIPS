@@ -1221,6 +1221,11 @@ SelectPartitionDialogFragment.SelectPartitionDialogListener,
 		// The readings ending in :00, :01, :02, and :03 are in the 2.4 GHz band
 		// The readings ending in :0c, :0d, :0e, and :0f are in the 5 GHz band
 		//ramadanDO: add current access points
+		wifiReadings.put("00:1E:58:27:0B:8D",0);
+		wifiReadings.put("D8:C7:C8:0C:D2:80",0);
+		wifiReadings.put("E8:DE:27:EF:0E:FE",0);
+		wifiReadings.put("F8:1A:67:C7:E8:40",0);
+		wifiReadings.put("40:E3:D6:1E:98:F0",0);
 	}
 	
 	/**
@@ -1313,11 +1318,16 @@ SelectPartitionDialogFragment.SelectPartitionDialogListener,
 		xInstances.get(0).setValue(attrOrientationZ, orientation[2]);
 
 		//ramadanDO: set access points here
-		xInstances.get(0).setValue(attrBSSID1, wifiReadings.get("00:17:0f:8d:c3:e0"));
-		xInstances.get(0).setValue(attrBSSID2, wifiReadings.get("00:17:0f:8d:c3:e1"));
-		xInstances.get(0).setValue(attrBSSID3, wifiReadings.get("00:17:0f:8d:c3:e2"));
-		xInstances.get(0).setValue(attrBSSID4, wifiReadings.get("00:17:0f:8d:c3:e3"));
-		xInstances.get(0).setValue(attrBSSID5, wifiReadings.get("00:17:0f:8d:c3:e3"));
+//		wifiReadings.put("00:1E:58:27:0B:8D",0);
+//		wifiReadings.put("D8:C7:C8:0C:D2:80",0);
+//		wifiReadings.put("E8:DE:27:EF:0E:FE",0);
+//		wifiReadings.put("F8:1A:67:C7:E8:40",0);
+//		wifiReadings.put("40:E3:D6:1E:98:F0",0);
+		xInstances.get(0).setValue(attrBSSID1, wifiReadings.get("00:1E:58:27:0B:8D"));
+		xInstances.get(0).setValue(attrBSSID2, wifiReadings.get("D8:C7:C8:0C:D2:80"));
+		xInstances.get(0).setValue(attrBSSID3, wifiReadings.get("E8:DE:27:EF:0E:FE"));
+		xInstances.get(0).setValue(attrBSSID4, wifiReadings.get("F8:1A:67:C7:E8:40"));
+		xInstances.get(0).setValue(attrBSSID5, wifiReadings.get("40:E3:D6:1E:98:F0"));
 
 
 		if (location != null) {
@@ -1344,12 +1354,17 @@ SelectPartitionDialogFragment.SelectPartitionDialogListener,
 		yInstances.get(0).setValue(attrOrientationX, orientation[0]);
 		yInstances.get(0).setValue(attrOrientationY, orientation[1]);
 		yInstances.get(0).setValue(attrOrientationZ, orientation[2]);
-		yInstances.get(0).setValue(attrBSSID1, wifiReadings.get("00:17:0f:8d:c3:e0"));
-		yInstances.get(0).setValue(attrBSSID2, wifiReadings.get("00:17:0f:8d:c3:e1"));
-		yInstances.get(0).setValue(attrBSSID3, wifiReadings.get("00:17:0f:8d:c3:e2"));
-		yInstances.get(0).setValue(attrBSSID4, wifiReadings.get("00:17:0f:8d:c3:e3"));
+//		yInstances.get(0).setValue(attrBSSID1, wifiReadings.get("00:17:0f:8d:c3:e0"));
+//		yInstances.get(0).setValue(attrBSSID2, wifiReadings.get("00:17:0f:8d:c3:e1"));
+//		yInstances.get(0).setValue(attrBSSID3, wifiReadings.get("00:17:0f:8d:c3:e2"));
+//		yInstances.get(0).setValue(attrBSSID4, wifiReadings.get("00:17:0f:8d:c3:e3"));
+//		yInstances.get(0).setValue(attrBSSID5, wifiReadings.get("00:17:0f:8d:c3:f0"));
 
-		yInstances.get(0).setValue(attrBSSID5, wifiReadings.get("00:17:0f:8d:c3:f0"));
+		yInstances.get(0).setValue(attrBSSID1, wifiReadings.get("00:1E:58:27:0B:8D"));
+		yInstances.get(0).setValue(attrBSSID2, wifiReadings.get("D8:C7:C8:0C:D2:80"));
+		yInstances.get(0).setValue(attrBSSID3, wifiReadings.get("E8:DE:27:EF:0E:FE"));
+		yInstances.get(0).setValue(attrBSSID4, wifiReadings.get("F8:1A:67:C7:E8:40"));
+		yInstances.get(0).setValue(attrBSSID5, wifiReadings.get("40:E3:D6:1E:98:F0"));
 		//ramadanDO: set access points here
 		if (location != null) {
 			yInstances.get(0).setValue(attrLatitude, location.getLatitude());

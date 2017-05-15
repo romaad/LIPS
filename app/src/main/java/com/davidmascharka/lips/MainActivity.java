@@ -700,7 +700,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
 				break;
 			case "lab":
-
+				wifiReadings.put("00:1E:58:27:0B:8D",0);
+				wifiReadings.put("D8:C7:C8:0C:D2:80",0);
+				wifiReadings.put("E8:DE:27:EF:0E:FE",0);
+				wifiReadings.put("F8:1A:67:C7:E8:40",0);
+				wifiReadings.put("40:E3:D6:1E:98:F0",0);
 				break;
 			case "morb3":
 
